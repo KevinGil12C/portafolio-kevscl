@@ -1,0 +1,48 @@
+@import url("style.css");
+
+.hero{
+    display: flex;
+    padding-top: 9rem;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+    background-color: var(--dark);
+}
+
+.hero__container{
+    text-align: center;
+}
+.hero__img{
+    width: 40%;
+    border-radius: 50%;
+    min-width: 25rem;
+}
+
+.hero__title{
+    font-size: 3rem;
+    font-family: "Press Start 2P", system-ui;
+    color: var(--bg-color);
+}
+.hero__description{
+    font-size: 2rem;
+    font-family: "Press Start 2P", system-ui;
+    margin-top: 1rem;
+    color: var(--bg-color);
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        flex-direction: column-reverse;
+        padding-top: 0;
+        height: 100dvh;
+    }  
+    .hero__title{
+        font-size: 9rem;
+    } 
+    .hero__description{
+        font-size: 4rem;
+        padding: 0 1rem;
+    }
+}

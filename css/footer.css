@@ -1,0 +1,53 @@
+@import url("style.css");
+
+.footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    height: 17vh;
+    align-items: center;
+    background-color: var(--color-text);
+}
+
+.footer__container--logo {
+    text-align: center;
+}
+
+.footer__texto {
+    font-size: 2rem;
+    font-family: "Press Start 2P", system-ui;
+    color: var(--bg-color);
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+}
+.footer__link {
+    font-size: 1.2rem;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0.5rem;
+    color: var(--bg-color);
+}
+
+.footer__link:hover{
+    font-size: 1.3rem;
+    color: var(--second-color);
+    transition: var(--transition);
+}
+
+.footer__social--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.footer__social {
+    font-size: 3.5rem;
+}
+
+.footer__social:hover {
+    font-size: 4rem;
+    transition: var(--transition);
+}
