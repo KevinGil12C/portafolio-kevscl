@@ -53,3 +53,12 @@
         padding: 0 1rem;
     }
 }
+
+@media screen and (max-width: 395px) {
+    .hero__title{
+        font-size: 4rem;
+    }
+    .hero__description{
+        font-size: 2rem;
+    }
+}

@@ -110,3 +110,26 @@
         background-size: 90%;
     }
 }
+
+@media screen and (max-width: 395px){
+    .about__title{
+        font-size: 2.5rem;
+    }
+    .about__text{
+        font-size: 2rem;
+    }
+    .about__description{
+        font-size: 1.8rem;
+    }
+    .about__media{
+        display: flex;
+        flex-direction: column;
+    }
+    .about__img{
+        width: 100%;
+        min-width: 10rem;
+    }
+    .about__icon .bx {
+        font-size: 3rem;
+    }
+}
