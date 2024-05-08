@@ -52,7 +52,7 @@
     transition: var(--transition);
 }
 
-@media screen and (max-width:395px){
+@media screen and (max-width:412px){
     .footer__container--links{
         display: none;
     }

@@ -54,11 +54,12 @@
     }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 412px) {
     .hero__title{
         font-size: 4rem;
     }
     .hero__description{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        flex-wrap: wrap;
     }
 }
