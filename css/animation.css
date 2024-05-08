@@ -1,0 +1,24 @@
+@keyframes flotating__icon {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-9px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes text__blur{
+    0%{
+        opacity: 0;
+        filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+    }
+}

@@ -4,7 +4,7 @@
     --color-text: hsl(0, 0%, 15%);
     --text-color: hsl(0, 0%, 98%);
     --bg-color: hsl(0, 0%, 100%);
-    --transition: 0.2s, background-color 0.2s ease-in-out;
+    --transition: 0.4s, background-color 0.2s ease-in-out;
     --primary-color: hsl(265, 96%, 43%);
     --border-radius: 2.5rem;
     --second-color: #fd8f44;

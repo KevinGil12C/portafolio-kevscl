@@ -6,8 +6,8 @@ header{
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--color-text);
-    backdrop-filter: blur(12px);
-    --webkit-backdrop-filet:blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
     position: fixed;
     width: 100%;
     padding: 1rem 1rem;

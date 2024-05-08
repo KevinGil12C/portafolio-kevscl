@@ -35,6 +35,7 @@
 
 .about__social {
     padding-top: 2rem;
+    text-align: center;
 }
 
 .about__icon .bx {
@@ -44,8 +45,10 @@
 }
 
 .about__icon .bx:hover {
-    font-size: 3rem;
+    transition: var(--transition);
+    font-size: 4rem;
     color: var(--second-color);
+    cursor: pointer;
 }
 
 .about__media {
