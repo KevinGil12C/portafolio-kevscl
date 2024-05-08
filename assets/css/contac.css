@@ -1,0 +1,88 @@
+@import url("style.css");
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 400;
+    height: 70dvh;
+    background: var(--gradient-blue);
+}
+
+.contact__title {
+    font-size: 3rem;
+    font-family: "Press Start 2P", system-ui;
+    color: var(--bg-color);
+    margin-bottom: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-self: center;
+    align-items: stretch;
+    max-width: 430px;
+    background: rgba(22, 0, 221, 0.19);
+    border: 1px solid rgba(0, 187, 255, 0.556);
+    backdrop-filter: blur(13px);
+    padding: 2rem;
+    height: 45vh;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 4px;
+}
+
+.form__label {
+    font-size: 1.3rem;
+    font-family: "Press Start 2P", system-ui;
+    color: var(--bg-color);
+    padding-top: 3rem;
+}
+
+.form__input {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.form__textarea {
+    font-size: 1.8rem;
+    resize: none;
+    height: 100px;
+    margin-bottom: 33px;
+}
+
+.form__btn {
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+    font-family: "Press Start 2P", system-ui;
+    background: black;
+    color: white;
+    padding: 2rem;
+    border-radius: 11px;
+    border: 1px solid white;
+}
+
+.form__btn:hover {
+    background-color: rgb(239, 239, 239);
+    border: 2px solid black;
+    color: black;
+    -webkit-animation: jello-horizontal 1s both;
+    animation: jello-horizontal 1s both;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+}
+
+@media screen and (max-width:768px) {
+    .contact{
+        height: 58dvh;
+    }
+    .form{
+        padding: 2rem;
+        max-width: 90%;
+        height: 40dvh;
+    }
+}

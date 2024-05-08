@@ -1,0 +1,112 @@
+@import url("style.css");
+
+.blur {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--color-text);
+    position: fixed;
+    width: 100%;
+    padding: 1rem 1rem;
+    z-index: 10;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.header__texto {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Press Start 2P", system-ui;
+    color: var(--bg-color);
+}
+
+.menu {
+    width: 40%;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu__link {
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+
+.menu__link {
+    color: var(--bg-color);
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+}
+@media screen and (max-width:768px) {
+    header {
+        gap: 15px;
+    }
+
+    .menu {
+        width: auto;
+    }
+
+    .menu__item a {
+        color: var(--bg-color);
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: center;
+        height: 100dvh;
+        justify-content: center;
+        gap: 2rem;
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    .panel.is-active {
+        transform: translate(0, 0);
+        backdrop-filter: blur(13px);
+    }
+
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+        background-color: var(--bg-color);
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner:after,
+    .hamburger.is-active .hamburger-inner:before {
+        background-color: var(--bg-color);
+    }
+
+}
