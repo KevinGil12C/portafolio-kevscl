@@ -2,7 +2,7 @@
 
 .blur {
     -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(1px);
 }
 
 header {

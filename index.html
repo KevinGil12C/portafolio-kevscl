@@ -11,9 +11,8 @@
     <!-- CDN -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
-    integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="dist/hamburgers.css" rel="stylesheet">
+        integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css" />
     <!-- Estilos -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/global.css" />
@@ -24,6 +23,7 @@
     <link rel="stylesheet" href="./assets/css/contac.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/portafolio.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
@@ -39,7 +39,7 @@
                 <li class="menu__item"><a class="menu__link" href="#hero">Inicio</a></li>
                 <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
                 <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Portafolio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#portafolio">Portafolio</a></li>
                 <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
                 <li class="menu__item"><a class="menu__link" href="#contac">Contacto</a></li>
             </ul>
@@ -90,55 +90,22 @@
             <h2 class="skills__title">Skills</h2>
 
             <div class="skills__container">
-                <div class="card">
+                <!--Renderizar card-->
+                <!-- <div class="card">
                     <iconify-icon class="card__icon" icon="skill-icons:html"></iconify-icon>
                     <h3 class="card__description">HTML</h3>
-                </div>
+                </div> -->
 
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="skill-icons:css"></iconify-icon>
-                    <h3 class="card__description">CSS</h3>
-                </div>
-
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="vscode-icons:file-type-js-official"></iconify-icon>
-                    <h3 class="card__description">JavaScript</h3>
-                </div>
-
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="devicon:java"></iconify-icon>
-                    <h3 class="card__description">Java</h3>
-                </div>
-
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="logos:python"></iconify-icon>
-                    <h3 class="card__description">Python</h3>
-                </div>
-
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="vscode-icons:file-type-php"></iconify-icon>
-                    <h3 class="card__description">PHP</h3>
-                </div>
-
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="logos:postgresql"></iconify-icon>
-                    <h3 class="card__description">Postgresql</h3>
-                </div>
-
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="skill-icons:git"></iconify-icon>
-                    <h3 class="card__description">Git</h3>
-                </div>
-
-                <div class="card">
-                    <iconify-icon class="card__icon" icon="mdi:github"></iconify-icon>
-                    <h3 class="card__description">GitHub</h3>
-                </div>
             </div>
         </section>
 
         <!--Portafolio-->
-
+        <section class="portafolio" id="portafolio">
+            <h2 class="portafolio__title">Portafolio</h2>
+            <div class="portafolio__container">
+                
+            </div>
+        </section>
         <!--Blog-->
 
         <!--contact-->
@@ -187,7 +154,7 @@
         </div>
     </footer>
 
-    <script src="./modules.js" type="module"></script>
+    <script src="modules.js" type="module"></script>
 </body>
 
 </html>

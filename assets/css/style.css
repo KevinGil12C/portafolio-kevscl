@@ -11,6 +11,7 @@
     --dark: #32012F;
     --lighther-green: #76ABAE;
     --gradient-blue: linear-gradient(145deg, rgb(0, 0, 0) 10%, rgb(0, 5, 36) 90%);
+    --text-gradient: linear-gradient(348deg, rgba(34,31,25,0.5718662464985995) 47%, rgba(253,143,68,1) 100%);
 }
 
 body.dark {
