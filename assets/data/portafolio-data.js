@@ -1,6 +1,6 @@
 export const portafolioData = [
     {
-        img: "https://github.com/KevinGil12C/portafolio-kevscl/blob/main/assets/proyectos/alurageek.png",
+        img: "https://github.com/KevinGil12C/portafolio-kevscl/blob/main/assets/proyectos/alurageek.png?raw=true",
         title: "AluraGeek",
         demo:"https://fake-api-ruby.vercel.app/",
         repo:"https://github.com/KevinGil12C/Fake-API",
