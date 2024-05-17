@@ -119,3 +119,10 @@
 .iconify__icon{
     font-size: 1.6rem;
 }
+
+@media screen and (max-width:768px){
+    .portafolio{
+        padding-top: 2rem ;
+        height: auto;
+    }
+}

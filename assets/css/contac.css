@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     font-family: 400;
-    height: 70dvh;
+    height: 90dvh;
     background: var(--gradient-blue);
 }
 
@@ -29,7 +29,7 @@
     border: 1px solid rgba(0, 187, 255, 0.556);
     backdrop-filter: blur(13px);
     padding: 2rem;
-    height: 45vh;
+    height: 65vh;
     justify-content: center;
     border-radius: 15px;
     gap: 4px;

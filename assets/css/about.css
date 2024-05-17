@@ -124,6 +124,9 @@
     .about__media{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
     .about__img{
         width: 100%;
