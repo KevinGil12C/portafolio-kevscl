@@ -7,14 +7,14 @@ export const portafolioData = [
         skills: ["html", "css","javascript"],
     },
     {
-        img: "../../assets/proyectos/encriptador.png",
+        img: "https://github.com/KevinGil12C/portafolio-kevscl/blob/main/assets/proyectos/encriptador.png?raw=true",
         title: "Encriptador Alura",
         demo:"https://kevingil12c.github.io/encriptador/",
         repo:"https://github.com/KevinGil12C/encriptador",
         skills: ["html", "css","javascript"],
     },
     {
-        img: "../../assets/proyectos/barberia_alura.png",
+        img: "https://github.com/KevinGil12C/portafolio-kevscl/blob/main/assets/proyectos/barberia_alura.png?raw=true",
         title: "Barbería Alura",
         demo:"https://kevingil12c.github.io/barberia_alura/",
         repo:"https://github.com/KevinGil12C/barberia_alura",
