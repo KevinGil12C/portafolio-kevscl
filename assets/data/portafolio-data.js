@@ -1,6 +1,6 @@
 export const portafolioData = [
     {
-        img: "https://github.com/KevinGil12C/portafolio-kevscl/blob/main/assets/proyectos/alurageek.png?raw=true",
+        img: "https://raw.githubusercontent.com/KevinGil12C/portafolio-kevscl/main/assets/proyectos/alurageek.png",
         title: "AluraGeek",
         demo:"https://fake-api-ruby.vercel.app/",
         repo:"https://github.com/KevinGil12C/Fake-API",
@@ -12,6 +12,13 @@ export const portafolioData = [
         demo:"https://kevingil12c.github.io/encriptador/",
         repo:"https://github.com/KevinGil12C/encriptador",
         skills: ["html", "css","javascript"],
+    },
+    {
+        img: "../../assets/proyectos/barberia_alura.png",
+        title: "Barbería Alura",
+        demo:"https://kevingil12c.github.io/barberia_alura/",
+        repo:"https://github.com/KevinGil12C/barberia_alura",
+        skills: ["html", "css"],
     }
 ]
 

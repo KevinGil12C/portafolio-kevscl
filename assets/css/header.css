@@ -35,6 +35,11 @@ header {
     color: var(--bg-color);
 }
 
+.active{
+    border-bottom: 2px solid var(--bg-color);
+    transition: var(--transition);
+}
+
 .menu {
     width: 40%;
 }
