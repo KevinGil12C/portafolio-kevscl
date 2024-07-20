@@ -1,15 +1,26 @@
-@import url("style.css");
-@import url("animation.css");
 .skills {
-    position: relative;
     display: flex;
     width: 100%;
-    height: auto;
     align-items: center;
-    justify-content: flex-start;
     flex-direction: column;
-    padding: 17rem 0;
-    background-image: linear-gradient(45deg, rgba(31, 31, 31, 0.7819502801120448) 62%, rgba(4, 13, 18, 1) 100%), url("../images/mundo.jpeg");
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.skills__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem 3rem;
+    z-index: 5;
+
 }
 
 .skills__title {
@@ -19,109 +30,20 @@
     color: var(--bg-color);
 }
 
-.skills__container {
-    padding-top: 3rem;
-    align-self: center;
-    display: flex;
-    width: calc(140px * 9 + 38px * 9); /* Ajusta el valor según el número de tarjetas y el gap */
-    overflow: hidden;
-    gap: 38px;
-    animation: scroll 30s linear infinite;
-}
-
 .card {
-    height: 190px;
-    width: 140px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 13px;
     padding: 2rem 3rem;
-    background-color: #9500ff67;
-    z-index: 5;
-    backdrop-filter: blur(1px);
-    border: 1px solid rgba(0, 255, 255, 0.13);
 }
 
-
-.terminal {
-    position: absolute;
-    right: 100px;
-    bottom: 50px;
-    background-color: #2e3436;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 10px;
-    font-family: 'Monaco', 'Courier New', monospace;
-    color: #ffffff;
-}
-
-.terminal-header {
-    background-color: #1a1a1a;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-}
-
-.buttons {
-    display: flex;
-    gap: 5px;
-}
-
-.button {
-    border-radius: 50%;
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-}
-
-.button.red {
-    background-color: #ff5f56;
-}
-
-.button.yellow {
-    background-color: #ffbd2e;
-}
-
-.button.green {
-    background-color: #27c93f;
-}
-
-.title {
+.card__description {
     color: #888;
     font-size: 14px;
     line-height: 20px;
-}
-
-.terminal-content {
-    background-color: #2e3436;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 10px;
-}
-
-.skills__academic{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.skills__academic__title, .skills__academic__item {
-    color: #ffffff;
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-
-.skills__academic__img img{
-    width: 150px;
-    border-radius: 50%;
+    text-transform: uppercase;
 }
 
 .skills__academic__courses{
@@ -141,21 +63,6 @@
 
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(-30%);
-    }
-    100% {
-        transform: translateX(calc(-140px * 9 - 38px * 9));
-    }
-}
-
-
-.card:hover {
-    border: 3px solid rgba(57, 1, 112, 0.69);
-    background-color: rgba(111, 0, 255, 0.13);
-}
-
 .card:hover>.card__icon {
     animation: flotating__icon 3s ease infinite 0.4s;
     font-size: 9rem;
@@ -167,7 +74,7 @@
     transition: transition;
 }
 .card__icon {
-    font-size: 7rem;
+    font-size: 3rem;
 
 }
 
@@ -196,12 +103,25 @@
     }
 
     .card__icon {
-        min-width: 12rem;
+        min-width: 5rem;
+        min-height: 5rem;
     }
 
     .card {
         border-radius: var(--border-radius);
+        align-items: center;
+        width: 100px;
+        height: 50px;
+        justify-content: center;
 
+    }
+    .card__icon{
+        font-size: 3rem;
+    }
+
+    .skills__container{
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     
 }

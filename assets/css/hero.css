@@ -5,7 +5,7 @@
     padding-top: 9rem;
     align-items: center;
     height: 100vh;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 10rem;
     background-color: var(--dark);
@@ -13,10 +13,12 @@
 
 .hero__container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero__img {
-    width: 40%;
+    width: 20%;
     border-radius: 50%;
     min-width: 25rem;
     animation: flotating__icon 3s ease infinite 0.4s;

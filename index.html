@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/hero.css" />
     <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/portafolio.css">
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/contac.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
-    <link rel="stylesheet" href="./assets/css/portafolio.css">
+
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
@@ -38,9 +39,8 @@
             <ul class="menu__list panel">
                 <li class="menu__item"><a class="menu__link active" href="#hero">Inicio</a></li>
                 <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
-                <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
                 <li class="menu__item"><a class="menu__link" href="#portafolio">Portafolio</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Blog</a></li>
+                <li class="menu__item"><a class="menu__link" href="https://kevingil12c.github.io/blog_seguridad_informacion/" target="_blank">Blog</a></li>
                 <li class="menu__item"><a class="menu__link" href="#contac">Contacto</a></li>
             </ul>
         </nav>
@@ -56,8 +56,13 @@
         <!--hero-->
         <section class="hero" id="hero">
             <div class="hero__container">
-                <h1 class="hero__title">Kev<span class="title__span">scl</span></h1>
-                <h2 class="hero__description">Front-end Developer</h2>
+                <div>
+                    <h1 class="hero__title">Kev<span class="title__span">scl</span></h1>
+                    <h2 class="hero__description">Front-end Developer</h2>
+                </div>
+                <div class="skills">
+                    <div class="skills__container"></div>
+                </div>
             </div>
             <img class="hero__img" src="assets/images/hero.jpeg" alt="Foto de perfil">
         </section>
@@ -69,18 +74,18 @@
                 <div class="about__text">
                     <h2>Ing. en Computación.</h2>
                 </div>
-                <p class="about__description">Mi nombre es Kevin Jesús y soy estudiante de Ingeniería en Computación.
-                    Durante mi formación, me he especializado en el desarrollo de software full stack, lo que me ha
-                    proporcionado una sólida base de conocimientos y habilidades técnicas.</p>
+                <p class="about__description">Soy ingeniero en computación egresado de la Universidad Autónoma del
+                    Estado de México (UAEMéx). Mi formación académica y experiencia práctica me han permitido
+                    desarrollar habilidades en diversas tecnologías, con un enfoque en el desarrollo web y análisis de
+                    datos.</p>
                 <p class="about__description">
-                    A lo largo de mi carrera universitaria, he tenido la oportunidad de desarrollar un sistema de punto
-                    de venta para PYMES. Este proyecto me permitió aplicar mis conocimientos en backend, enfocándome en
-                    la seguridad del sistema y en el uso de bases de datos con triggers y vistas, optimizando así el
-                    código y mejorando su eficiencia.
+                    He completado cursos de Frontend con AluraLatam y una certificación en Análisis de Datos de Google
+                    en Coursera, y actualmente estoy cursando una certificación en Ciberseguridad de Google.
                 </p>
 
 
                 <div class="about__social">
+                    <a href="https://cvdesignr.com/p/6699d06173214" class="about__icon" target="_blank"><i class="about__icon bx"><iconify-icon icon="vscode-icons:file-type-pdf2"></iconify-icon></i></a>
                     <a href="https://github.com/KevinGil12C" class="about__icon"><i class='bx bxl-github'></i></a>
                     <a href="https://www.linkedin.com/in/kevin-jesus-coyote-gil-030287288/" class="about__icon"><i
                             class='bx bxl-linkedin'></i></a>
@@ -91,45 +96,6 @@
             </div>
             <div class="about__media">
                 <img src="assets/images/icon.jpeg" alt="" class="about__img">
-            </div>
-        </section>
-
-        <!--skills-->
-        <section class="skills" id="skills">
-            <h2 class="skills__title">Skills</h2>
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="buttons">
-                        <span class="button red"></span>
-                        <span class="button yellow"></span>
-                        <span class="button green"></span>
-                    </div>
-                    <span class="title">Terminal - bash</span>
-                </div>
-                <div class="terminal-content">
-                    <div class="skills__academic">
-                        <div class="skills__academic__img">
-                            <img src="./assets/images/hero.jpeg" alt="">
-                        </div>
-                        <div class="skills__academic__courses">
-                            <h2 class="skills__academic__title">Formación académica</h2>
-                            <h2 class="skills__academic__item">Ingeniería en Computación: En curso - UAEMéx</h2>
-                            <h2 class="skills__academic__item">Formación Front End G6: En curso - Alura</h2>
-                            <h2 class="skills__academic__item">Análisis de datos: 2024 - Google</h2>
-                            <h2 class="skills__academic__item">Operación Aleph: SC-900: 2024 - Red por la Ciberseguridad
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills__container">
-                <!--Renderizar card-->
-                <!-- <div class="card">
-                    <iconify-icon class="card__icon" icon="skill-icons:html"></iconify-icon>
-                    <h3 class="card__description">HTML</h3>
-                </div> -->
-
             </div>
         </section>
 
@@ -172,19 +138,26 @@
                 <a class="footer__link" href="#">Acerca de mí</a>
                 <a class="footer__link">Contacto</a>
                 <a class="footer__link">Referencias</a>
-                <a class="footer__link">Blog</a>
+                <a class="footer__link" href="https://kevingil12c.github.io/blog_seguridad_informacion/" target="_blank">Blog</a>
             </div>
 
         </div>
 
         <div class="footer__container footer__container--social">
             <ul class="footer__social--list">
-                <li class="footer__social github"><a href=""><iconify-icon icon="mdi:github"
-                            style="color: white"></iconify-icon></a></li>
-                <li class="footer__social"><a href=""><iconify-icon icon="skill-icons:linkedin"></iconify-icon></a></li>
-                <li class="footer__social"><a href=""><iconify-icon icon="skill-icons:instagram"></iconify-icon></a>
+                <li class="footer__social github"><a href="">
+                        <iconify-icon icon="mdi:github" style="color: white"></iconify-icon>
+                    </a></li>
+                <li class="footer__social"><a href="">
+                        <iconify-icon icon="skill-icons:linkedin"></iconify-icon>
+                    </a></li>
+                <li class="footer__social"><a href="">
+                        <iconify-icon icon="skill-icons:instagram"></iconify-icon>
+                    </a>
                 </li>
-                <li class="footer__social"><a href=""><iconify-icon icon="logos:facebook"></iconify-icon></a></li>
+                <li class="footer__social"><a href="">
+                        <iconify-icon icon="logos:facebook"></iconify-icon>
+                    </a></li>
             </ul>
         </div>
     </footer>

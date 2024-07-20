@@ -4,7 +4,7 @@ export const portafolioContainer = document.querySelector(".portafolio__containe
 const portafolioCards = portafolioData.map(
   (data) =>
     `
- <article class="portafolio__card experience__box ${skillsData[skills]}">
+ <article class="portafolio__card">
           <div class="img__container">
             <img
             src=${data.img}
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Agrega un evento click a cada elemento de filtro
       item.addEventListener('click', function() {
           // Obtiene el valor del filtro del atributo 'data-filter' del elemento de filtro actual
-          var value = this.getAttribute('data-filer');
+          var value = this.getAttribute('data-filter');
           
           // Itera sobre cada caja de experiencia
           postBoxes.forEach(function(box) {
