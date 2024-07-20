@@ -34,6 +34,10 @@ const skillData = [
     {
         icon: "mdi:github",
         title: "github"
+    },
+    {
+        icon: "devicon:cplusplus",
+        title: "C++"
     }
 
 ]
