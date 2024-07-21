@@ -1,12 +1,13 @@
 import { portafolioData, skillsData } from "../data/portafolio-data.js";
 
 export const portafolioContainer = document.querySelector(".portafolio__container");
+const errorImage = document.querySelector(".error-image");
 
 // Verifica si estás en index.html
-const isIndexPage = window.location.pathname.includes("portafolio.html");
+const isIndexPage = window.location.pathname.includes("index.html");
 
 // Si estás en index.html, limita los datos a los primeros 3 elementos
-const dataToDisplay = isIndexPage ?  portafolioData : portafolioData.slice(0, 3);
+const dataToDisplay = isIndexPage ? portafolioData.slice(0, 3) : portafolioData;
 
 const portafolioCards = dataToDisplay.map(data => {
   // Construir el enlace al demo solo si data.demo no está vacío
@@ -14,8 +15,11 @@ const portafolioCards = dataToDisplay.map(data => {
     `<a href="${data.demo}" target="_blank" rel="nofollow noreferrer noopener" class="card__btn">Ver proyecto</a>` 
     : '';
   
+  // Crear una lista de clases para el artículo basadas en las habilidades
+  const skillsClasses = data.skills.map(skill => skill.toLowerCase()).join(' ');
+
   return `
-    <article class="portafolio__card">
+    <article class="portafolio__card ${skillsClasses}">
       <div class="img__container">
         <img src="${data.img}" alt="${data.title}" class="card__img">
       </div>
@@ -39,35 +43,33 @@ portafolioContainer.innerHTML = portafolioCards;
 
 // Espera a que el DOM esté completamente cargado antes de ejecutar el código
 document.addEventListener("DOMContentLoaded", function() {
-  // Selecciona todos los elementos de filtro
   const filterItems = document.querySelectorAll('.data__caja');
-  // Selecciona todos los elementos de caja de experiencia
-  const postBoxes = document.querySelectorAll('.experience__box');
+  const portfolioCards = document.querySelectorAll('.portafolio__card');
 
-  // Itera sobre cada elemento de filtro
   filterItems.forEach(item => {
-    // Agrega un evento click a cada elemento de filtro
     item.addEventListener('click', function() {
-      // Obtiene el valor del filtro del atributo 'data-filter' del elemento de filtro actual
-      const value = this.getAttribute('data-filter');
-      
-      // Itera sobre cada caja de experiencia
-      postBoxes.forEach(box => {
-        // Si el valor del filtro es 'all' o la caja de experiencia contiene la clase del filtro seleccionado
-        if (value === 'all' || box.classList.contains(value)) {
-          // Muestra la caja de experiencia
-          box.style.display = 'block';
+      const filterValue = this.getAttribute('data-filter').toLowerCase();
+      let anyVisible = false;
+
+      portfolioCards.forEach(card => {
+        const cardSkills = card.className.split(' ');
+
+        if (filterValue === 'all' || cardSkills.includes(filterValue)) {
+          card.style.display = 'block';
+          anyVisible = true;
         } else {
-          // Oculta la caja de experiencia si no coincide con el filtro seleccionado
-          box.style.display = 'none';
+          card.style.display = 'none';
         }
       });
 
-      // Desactiva el filtro actualmente activo
-      filterItems.forEach(item => {
-        item.classList.remove('active__filter');
-      });
-      // Activa el filtro seleccionado
+      // Mostrar u ocultar la imagen de error
+      if (anyVisible) {
+        errorImage.style.display = 'none';
+      } else {
+        errorImage.style.display = 'block';
+      }
+
+      filterItems.forEach(item => item.classList.remove('active__filter'));
       this.classList.add('active__filter');
     });
   });
@@ -77,16 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", () => {
     header.classList.toggle("shadow", window.scrollY > 0);
   });
-});
 
-// Agrega un evento de escucha para detectar el desplazamiento de la página
-window.addEventListener("scroll", () => {
-  const menu = document.querySelector('.menu'); // Selecciona el elemento del menú
-
-  // Verifica si la página se ha desplazado más allá de cierta posición
-  if (window.scrollY > 0) {
-    menu.classList.add('shadow'); // Aplica la clase de sombra al menú
-  } else {
-    menu.classList.remove('shadow'); // Elimina la clase de sombra del menú si no se desplaza
-  }
+  // Agrega un evento de escucha para detectar el desplazamiento de la página
+  const menu = document.querySelector('.menu');
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      menu.classList.add('shadow');
+    } else {
+      menu.classList.remove('shadow');
+    }
+  });
 });

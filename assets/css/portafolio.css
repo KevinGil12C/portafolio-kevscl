@@ -1,5 +1,11 @@
 @import url("style.css");
-
+.error-image {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    width: 50%; /* Ajusta el tamaño según tus necesidades */
+  }
+  
 .portafolio {
     display: flex;
     align-items: center;
@@ -162,5 +168,16 @@
     .portafolio{
         padding-top: 9rem ;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .data__caja{
+        width: 3rem;
+    height: 3rem;
+    }
+    .data__icon{
+        font-size: 2rem;
+        justify-content: center;
     }
 }
