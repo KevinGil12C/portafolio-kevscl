@@ -7,7 +7,7 @@ const errorImage = document.querySelector(".error-image");
 const isIndexPage = window.location.pathname.includes("portafolio.html");
 
 // Si estás en index.html, limita los datos a los primeros 3 elementos
-const dataToDisplay = isIndexPage ? portafolioData.slice(0, 3) : portafolioData;
+const dataToDisplay = isIndexPage ?  portafolioData : portafolioData.slice(0, 3) ;
 
 const portafolioCards = dataToDisplay.map(data => {
   // Construir el enlace al demo solo si data.demo no está vacío
