@@ -4,7 +4,7 @@ export const portafolioContainer = document.querySelector(".portafolio__containe
 const errorImage = document.querySelector(".error-image");
 
 // Verifica si estás en index.html
-const isIndexPage = window.location.pathname.includes("index.html");
+const isIndexPage = window.location.pathname.includes("portafolio.html");
 
 // Si estás en index.html, limita los datos a los primeros 3 elementos
 const dataToDisplay = isIndexPage ? portafolioData.slice(0, 3) : portafolioData;
