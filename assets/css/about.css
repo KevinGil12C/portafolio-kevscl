@@ -114,6 +114,9 @@
 }
 
 @media screen and (max-width: 395px){
+    .about{
+        background-size: cover;
+    }
     .about__title{
         font-size: 2.5rem;
     }

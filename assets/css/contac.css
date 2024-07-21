@@ -18,6 +18,18 @@
     margin-bottom: 25px;
 }
 
+.contact__icon {
+    font-size: 5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.contact__icon:hover{
+    animation: flotating__icon 3s ease infinite 0.4s;
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -77,20 +89,23 @@
 }
 
 @media screen and (max-width:768px) {
-    .contact{
+    .contact {
         height: 58dvh;
     }
-    .form{
+
+    .form {
         padding: 2rem;
         max-width: 90%;
         height: 40dvh;
     }
 }
-@media screen and (max-width:412px){
-    .contact{
+
+@media screen and (max-width:412px) {
+    .contact {
         height: 86dvh;
     }
-    .form{
+
+    .form {
         padding: 2rem;
         max-width: 90%;
         height: 60dvh;

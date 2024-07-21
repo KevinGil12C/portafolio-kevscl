@@ -86,6 +86,10 @@
 }
 
 @media screen and (max-width:768px) {
+    .hero{
+        height: auto;
+        padding: 9rem 0;
+    }
     .skills {
         height: auto;
         padding: 2rem 1rem;
@@ -113,15 +117,28 @@
         width: 100px;
         height: 50px;
         justify-content: center;
-
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
     .card__icon{
         font-size: 3rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
+    .card__description{
+        margin-top: 0;
+        text-align: center;
+
+        align-items: center;
+        justify-content: center;
+    }
     .skills__container{
         flex-wrap: wrap;
         flex-direction: row;
+        gap: 30px;
     }
     
 }

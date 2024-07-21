@@ -3,10 +3,10 @@ import { portafolioData, skillsData } from "../data/portafolio-data.js";
 export const portafolioContainer = document.querySelector(".portafolio__container");
 
 // Verifica si estás en index.html
-const isIndexPage = window.location.pathname.includes("index.html");
+const isIndexPage = window.location.pathname.includes("portafolio.html");
 
 // Si estás en index.html, limita los datos a los primeros 3 elementos
-const dataToDisplay = isIndexPage ? portafolioData.slice(0, 3) : portafolioData;
+const dataToDisplay = isIndexPage ?  portafolioData : portafolioData.slice(0, 3);
 
 const portafolioCards = dataToDisplay.map(data => {
   // Construir el enlace al demo solo si data.demo no está vacío
