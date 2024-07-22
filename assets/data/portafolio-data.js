@@ -65,7 +65,7 @@ export const portafolioData = [
 
 export const skillsData = {
     react: "skill-icons:react-light",
-    php: "skill-icons:php-dark w-1em h-1em",
+    php: "skill-icons:php-dark",
     html: "devicon:html5",
     css: "devicon:css3",
     javascript: "skill-icons:javascript",

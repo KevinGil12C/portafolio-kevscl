@@ -18,7 +18,8 @@
 }
 
 .hero__img {
-    width: 20%;
+    width: 180px;
+    height: auto;
     border-radius: 50%;
     min-width: 25rem;
     animation: flotating__icon 3s ease infinite 0.4s;
