@@ -7,6 +7,12 @@ export const portafolioData = [
         skills: ["php", "javascript", "css", "bootstrap"],
     },
     {
+        img: "https://github.com/KevinGil12C/portafolio-kevscl/blob/main/assets/proyectos/gestor.png?raw=true",
+        title: "Gestor de contraseñas",
+        repo:"https://github.com/KevinGil12C/GestorClaves.git ",
+        skills: ["java", "sqlite"],
+    },
+    {
         img: "https://github.com/KevinGil12C/portafolio-kevscl/blob/main/assets/proyectos/alura-flix-img.png?raw=true",
         title: "Alura-flix",
         demo:"https://alura-flix-fawn.vercel.app/",
@@ -74,4 +80,5 @@ export const skillsData = {
     react: "skill-icons:react-dark",
     cplus: "devicon:cplusplus",
     java: "devicon:java",
+    sqlite: "skill-icons:sqlite",
 };
