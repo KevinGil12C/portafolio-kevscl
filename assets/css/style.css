@@ -1,4 +1,6 @@
 :root {
+    --animation-duration: 10s;
+    
     --color-card: hsl(265, 96%, 43%);
     --color-boton: hsl(217, 96%, 17%);
     --color-text: hsl(0, 0%, 15%);

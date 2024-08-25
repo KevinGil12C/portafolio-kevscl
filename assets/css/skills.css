@@ -87,7 +87,6 @@
 
 @media screen and (max-width:768px) {
     .hero{
-        height: auto;
         padding: 9rem 0;
     }
     .skills {
